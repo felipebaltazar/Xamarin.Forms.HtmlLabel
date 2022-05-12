@@ -1,0 +1,6 @@
+﻿<Project>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)PreserveXamarinFormsHtmlLabel.cs"
+             Visible="false" />
+  </ItemGroup>
+</Project>

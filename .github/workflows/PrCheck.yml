@@ -1,0 +1,18 @@
+name: Build Xamarin.Forms.HtmlLabel
+
+on: [pull_request]
+    
+jobs:
+  build:
+
+    name: Build packages solution
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.x
+    - name: Build with dotnet
+      run: dotnet build Xamarin.Forms.HtmlLabel.sln --configuration Release
